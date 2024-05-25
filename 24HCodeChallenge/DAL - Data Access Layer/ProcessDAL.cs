@@ -65,6 +65,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                         response.Message = ex.Message;
                     }
                 }
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -107,6 +108,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                         response.Message = ex.Message;
                     }
                 }
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -148,6 +150,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                         response.Message = ex.Message;
                     }
                 }
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -188,6 +191,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                         response.Message = ex.Message;
                     }
                 }
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -235,7 +239,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                     }
                 }
                 return orderPizza;
-
+                connection.Close();
             }
             catch(Exception ex)
             {
@@ -284,7 +288,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                     }
                 }
                 return pizzaOrders;
-
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -325,7 +329,7 @@ namespace _24HCodeChallenge.DAL___Data_Access_Layer
                     }
                 }
                 return salesReport;
-
+                connection.Close();
             }
             catch (Exception ex)
             {
